@@ -1,0 +1,50 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    form {
+      // width: 360px;
+      width: 50%;
+      // padding: 4rem 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1.5rem;
+  
+      h1 {
+        color: gray;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+      }
+  
+      label {
+        color: gray;
+        font-size: 1.8rem;
+      }
+  
+      input,
+      textarea {
+        padding: 1.8rem;
+        border: 1px solid rgb(216, 214, 214);
+      }
+  
+      button {
+        border: none;
+        padding: 1.8rem;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: #00008b;
+        cursor: pointer;
+        &:hover{
+          background-color: blue  ;
+        }
+      }
+  
+      span{
+        color: red;
+        font-size: 1.2rem;
+      }
+    }
+  }
