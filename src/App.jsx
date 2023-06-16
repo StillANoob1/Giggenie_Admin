@@ -5,11 +5,7 @@ import Topbar from './components/topbar/Topbar';
 import './App.css';
 import Home from './pages/home/Home';
 import UserList from './pages/userList/UserList';
-import User from './pages/user/User';
-import NewUser from './pages/newUser/NewUser';
 import ProductList from './pages/productList/ProductList';
-import Product from './pages/product/Product';
-import NewProduct from './pages/newProduct/NewProduct';
 import Login from './pages/login/Login';
 import { Toaster } from 'react-hot-toast';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
@@ -65,11 +61,7 @@ const App = () => {
       children: [
         { path: '/', element: <Home /> },
         { path: '/users', element: <UserList /> },
-        { path: '/user/:userId', element: <User /> },
-        { path: '/newUser', element: <NewUser /> },
         { path: '/products', element: <ProductList /> },
-        { path: '/product/:productId', element: <Product /> },
-        { path: '/newproduct', element: <NewProduct /> },
       ],
     },
     { path: '/login', element: <Login /> },
