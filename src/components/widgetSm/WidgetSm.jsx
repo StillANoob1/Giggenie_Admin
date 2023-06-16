@@ -1,7 +1,8 @@
 import "./widgetSm.css";
 import { Visibility } from "@mui/icons-material";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { serverUrl } from "../../../../fivrr-front/src/utils/serverUrl";
+
+import { serverUrl } from "../../utils/serverUrl"
 import axios from "axios";
 import nodp from "../../assests/nodp.png"
 
