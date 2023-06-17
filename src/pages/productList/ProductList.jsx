@@ -54,11 +54,11 @@ export default function ProductList() {
       headerName: "Image",
       width: 100,
       renderCell: (params) => (
-        <img className="gigimg" src={params.row.cover || nodp} alt=""  />
+        <img className="gigimg" src={params?.row?.cover || nodp} alt=""  />
       ),
     },
     { field: "title", headerName: "Title", width: 300 },
-    { field: "owner", headerName: "Owner", width: 200, valueGetter: (params) => params.row.userId.username },
+    { field: "owner", headerName: "Owner", width: 200, valueGetter: (params) => params?.row?.userId?.username },
     { field: "price", headerName: "Price", width: 120 },
     {
       field: "action",
@@ -68,7 +68,7 @@ export default function ProductList() {
         <>
           <DeleteOutline
             className="productListDelete"
-            onClick={() => handleDelete(params.row._id)}
+            onClick={() => handleDelete(params?.row._id)}
           />
         </>
       ),

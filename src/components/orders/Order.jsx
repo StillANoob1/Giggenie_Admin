@@ -25,7 +25,7 @@ export default function Order() {
         </tr>
         {
           isLoading ? <Loader /> : data.orders.map((order) => {
-            return <tr className="widgetLgTr" key={order._id}>
+            return <tr className="widgetLgTr" key={order?._id}>
               <td className="widgetLgUser">
               <span className="widgetLgName">{order?.sellerId?.username}</span>
               </td>

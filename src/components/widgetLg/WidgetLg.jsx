@@ -25,7 +25,7 @@ export default function WidgetLg() {
     <div className="widgetSm">
       <span className="widgetSmTitle">Buyers</span>
      {isLoading? <Loader /> : error ?"Something Went Wrong": data.map((user)=>{
-      return  <ul className="widgetSmList" key={user._id}>
+      return  <ul className="widgetSmList" key={user?._id}>
         <li className="widgetSmListItem">
           <img
             src={user?.img || nodp}
