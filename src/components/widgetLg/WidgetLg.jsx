@@ -1,11 +1,10 @@
 import "./widgetLg.css";
-import { Visibility } from "@mui/icons-material";
+
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { serverUrl } from "../../../../fivrr-front/src/utils/serverUrl";
 import axios from "axios";
 import nodp from "../../assests/nodp.png"
-
 import Loader from "../../components/loader/Loader"
+import { serverUrl } from "../../utils/serverUrl";
 
 
 export default function WidgetLg() {
